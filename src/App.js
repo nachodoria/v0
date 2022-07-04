@@ -11,7 +11,7 @@ function App() {
          smooth = {true} 
          offset={-70}
          duration={800}
-          id='top-button' class="material-symbols-outlined">
+          id='top-button' className="material-symbols-outlined">
      keyboard_double_arrow_up
      </Link>
     
@@ -39,7 +39,20 @@ function App() {
    </div>
    
       <div className='ab-me'>
-       <h1>About Me</h1>
+        <div className='ab-me-ph'>
+       <p>  
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec blandit orci.
+         Integer malesuada odio in quam feugiat feugiat. In et mauris sagittis, facilisis justo nec, sollicitudin neque.
+          Nunc quis tellus id mi accumsan pharetra. Mauris at pretium velit. Suspendisse facilisis nisl et nisi viverra, id tempor lectus iaculis.
+           Donec lobortis nibh et lorem fermentum facilisis. Phasellus enim tellus, porta id vestibulum at, feugiat a sapien. Proin vehicula, nulla nec pretium scelerisque, quam risus dapibus dui, in pretium lacus nisi maximus lectus.
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent bibendum dui et metus fringilla, ac malesuada diam aliquam. Duis at ex eget nisi fermentum commodo.
+       </p>
+       </div>
+        <div className='ab-me-title'>
+          <h1 className='title-ab'>About Me</h1>
+        </div>
+       
+      
         </div>
         
     

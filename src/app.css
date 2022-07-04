@@ -12,6 +12,7 @@
     position: sticky;
     top: 30px;
     right: 10px;
+    cursor: pointer;
 
 }
 
@@ -68,12 +69,12 @@
     width: 450px;
     height: 450px;
     border-radius: 50%;
-    filter: grayscale(80%);
     transition:  400ms;
+    border: 4px solid black ;
     
 }
 .img-me:hover{
-    filter: grayscale(0);
+    
     transform: translateY(-20px);
 }
 
@@ -83,6 +84,15 @@
         height: 250px;
     }
 }
+@media only screen and (max-width: 556px) {
+    .img-me{
+        display: none;
+    }
+    .grid-main{
+        display: flex;
+    }
+    
+}
 
 /**/
 
@@ -90,8 +100,40 @@
 .ab-me{
     width: 100%;
     height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    
+}
+
+.ab-me-ph{
+    margin-inline: 150px;
+}
+.ab-me-title{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
+.title-ab {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    width: fit-content;
+  }
+  
+  .title-ab::before {
+    content: "";
+    position: absolute;
+        width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  .title-ab:hover::before {
+    transform: scaleX(1);
+  }
