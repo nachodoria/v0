@@ -2,7 +2,25 @@
 
 *{
     font-family: 'League Spartan', sans-serif;
+    --back-color: #f8f5f2;
+    --head-color: #232323;
+    --p-color: #222525;
+    --button-color : #078080;
+    --btn-text-color: #232323;
 }
+
+body{
+    margin: 0;
+}
+#main{
+    background-color: var(--back-color);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    z-index: 4;
+}
+
+/**/
 
 .container-top-button{
     z-index: 2;
@@ -13,6 +31,8 @@
     top: 30px;
     right: 10px;
     cursor: pointer;
+    margin-right: 20px;
+   color: var(--p-color);
 
 }
 
@@ -32,17 +52,10 @@
     animation: shake 0.5s;
 }
 @keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(3deg); }
+    75% { transform: rotate(-3deg); }
+    100% { transform: rotate(0deg); }
   }
 .grid-main{
     display: grid;
@@ -57,6 +70,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    color: var(--head-color);
     
 }
 .grid-right{
@@ -65,12 +79,33 @@
     justify-content: center;
 }
 
+.redirect-ab-us{
+    cursor: pointer;
+    background-color: var(--button-color);
+    border-radius: 3px;
+    font-weight: 700;
+    cursor: pointer;
+    height: 40px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--btn-text-color);
+    transition: all 250ms;
+    margin-top: 20px;
+}
+.redirect-ab-us:hover{
+    transform: scale(1.05);
+}
+
+
+
 .img-me{
-    width: 450px;
-    height: 450px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     transition:  400ms;
-    border: 4px solid black ;
+    border: 4px solid var(--button-color) ;
     
 }
 .img-me:hover{
@@ -110,15 +145,17 @@
 
 .ab-me-ph{
     margin-inline: 150px;
+    color: var(--p-color);
 }
 .ab-me-title{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--head-color);
 }
 .title-ab {
     position: relative;
-    color: #000;
+    color: var(--head-color);
     text-decoration: none;
     width: fit-content;
   }
@@ -130,10 +167,26 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #000;
+    background-color: var(--head-color);
     transform: scaleX(0);
     transition: transform 0.3s ease-in-out;
   }
   .title-ab:hover::before {
     transform: scaleX(1);
   }
+  @media only screen and (max-width: 877px) {
+    .ab-me{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        flex-direction: row-reverse;
+    }
+}
+@media only screen and (max-width: 442px) {
+    .ab-me{
+        height: max-content;
+    }
+    body{
+        height: fit-content;
+        width: fit-content;
+    }
+}

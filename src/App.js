@@ -1,12 +1,20 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import "./app.css"
 import { Link, animateScroll as scroll } from "react-scroll";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+
+  useEffect(()=> {
+    Aos.init({duration : 2000});
+}, [])
+
+
   return (
-    <>
-    <div className='container-top-button'>
+   <section id='main'>
+    <div className='container-top-button' data-aos="fade-down">
+      
       <Link to = "container" 
          smooth = {true} 
          offset={-70}
@@ -14,15 +22,17 @@ function App() {
           id='top-button' className="material-symbols-outlined">
      keyboard_double_arrow_up
      </Link>
+      
     
     </div>
     
     <div className='container'>
      
-     <div className='grid-main'>
+     <div className='grid-main' data-aos="fade-down">
        <div className='grid-left'>
          <h1>Hi ! <br></br> Im Ignacio Doria</h1>
          <Link to = "ab-me"
+         className='redirect-ab-us'
           smooth= {true}
           offset={-70}
          duration={500}
@@ -38,7 +48,7 @@ function App() {
      
    </div>
    
-      <div className='ab-me'>
+      <div className='ab-me'  >
         <div className='ab-me-ph'>
        <p>  
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec blandit orci.
@@ -57,7 +67,7 @@ function App() {
         
     
     
-    </>
+    </section>
      
     
   
