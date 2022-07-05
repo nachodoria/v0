@@ -2,15 +2,18 @@
 
 *{
     font-family: 'League Spartan', sans-serif;
-    --back-color: #f8f5f2;
-    --head-color: #232323;
-    --p-color: #222525;
-    --button-color : #078080;
-    --btn-text-color: #232323;
+    --back-color: #eff0f3;
+    --head-color: #0d0d0d;
+    --p-color: #2a2a2a;
+    --button-color : #ff8e3c;
+    --btn-text-color: #0d0d0d;
 }
 
 body{
     margin: 0;
+}
+.navbar{
+    margin-top: 30px;
 }
 #main{
     background-color: var(--back-color);
@@ -46,15 +49,16 @@ body{
 }
 .container h1{
    font-weight: 500;
-    font-size: 40px;
+    font-size: 60px;
+    
 }
 .container h1:hover{
     animation: shake 0.5s;
 }
 @keyframes shake {
     0% { transform: rotate(0deg); }
-    25% { transform: rotate(3deg); }
-    75% { transform: rotate(-3deg); }
+    25% { transform: rotate(2deg); }
+    75% { transform: rotate(-2deg); }
     100% { transform: rotate(0deg); }
   }
 .grid-main{
@@ -82,7 +86,7 @@ body{
 .redirect-ab-us{
     cursor: pointer;
     background-color: var(--button-color);
-    border-radius: 3px;
+    border-radius: 10px;
     font-weight: 700;
     cursor: pointer;
     height: 40px;
@@ -91,11 +95,13 @@ body{
     align-items: center;
     justify-content: center;
     color: var(--btn-text-color);
-    transition: all 250ms;
+    transition: ease-in-out 150ms;
     margin-top: 20px;
+    border: 1px solid --button-color;
 }
 .redirect-ab-us:hover{
-    transform: scale(1.05);
+    background-color: var(--btn-text-color);
+    color: var(--button-color);
 }
 
 
@@ -109,14 +115,19 @@ body{
     
 }
 .img-me:hover{
-    
-    transform: translateY(-20px);
+    border: 4px solid var(--btn-text-color);
+    transform: scale(1.01);
 }
 
 @media only screen and (max-width: 800px) {
     .img-me{
         width: 250px;
         height: 250px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .container h1{
+        text-align: center;
     }
 }
 @media only screen and (max-width: 556px) {
@@ -135,17 +146,21 @@ body{
 .ab-me{
     width: 100%;
     height: 100vh;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    grid-template-columns: 1fr 1fr;
     text-align: center;
     
 }
 
 .ab-me-ph{
-    margin-inline: 150px;
+    
     color: var(--p-color);
+}
+.ab-me-ph p{
+    margin-inline: 300px;
+    font-size: 18px;
 }
 .ab-me-title{
     display: flex;
@@ -163,7 +178,7 @@ body{
   .title-ab::before {
     content: "";
     position: absolute;
-        width: 100%;
+    width: 100%;
     height: 2px;
     bottom: 0;
     left: 0;
@@ -174,13 +189,6 @@ body{
   .title-ab:hover::before {
     transform: scaleX(1);
   }
-  @media only screen and (max-width: 877px) {
-    .ab-me{
-        grid-template-columns: none;
-        grid-template-rows: 1fr 1fr;
-        flex-direction: row-reverse;
-    }
-}
 @media only screen and (max-width: 442px) {
     .ab-me{
         height: max-content;
@@ -188,5 +196,10 @@ body{
     body{
         height: fit-content;
         width: fit-content;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .ab-me-ph p{
+        margin-inline: 100px;
     }
 }
