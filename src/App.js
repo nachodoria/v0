@@ -3,6 +3,8 @@ import "./app.css"
 import { Link, animateScroll as scroll } from "react-scroll";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { motion } from "framer-motion"
+
 
 function App() {
 
@@ -13,11 +15,17 @@ function App() {
 
   return (
     <>
-      <navbar className="navbar">
-
-        </navbar>
-
+     
         <div id='main'>
+         <div className="navbar">
+            <ul>
+              <li>About</li>
+              <li>Home</li>
+              <li>Projects</li>
+
+            </ul>
+          </div>
+
         <div className='container-top-button' data-aos="fade-down">
           
           <Link to = "container" 
@@ -33,10 +41,16 @@ function App() {
 
         <div className='container'>
         
-        <div className='grid-main' data-aos="fade-down">
+        <div className='grid-main' >
           <div className='grid-left'>
-            <h1>Hi ! <br></br> I´m Ignacio Doria</h1>
+            <div className='title-cont'>
+              <h1>
+        Hi !<br></br> I´m Ignacio Doria 
+        </h1>
+            </div>
+        
             <Link to = "ab-me"
+            data-aos="fade-down"
             className='redirect-ab-us'
               smooth= {true}
               offset={-70}
@@ -45,7 +59,7 @@ function App() {
               About Me </Link>
           </div>
         
-          <div className='grid-right'>
+          <div className='grid-right' data-aos="fade-down">
             <img className='img-me' src={require ('./components/me.jpeg')}/>
           </div>
           
