@@ -17,14 +17,7 @@ function App() {
     <>
      
         <div id='main'>
-         <div className="navbar">
-            <ul>
-              <li>About</li>
-              <li>Home</li>
-              <li>Projects</li>
-
-            </ul>
-          </div>
+         
 
         <div className='container-top-button' data-aos="fade-down">
           
@@ -38,10 +31,21 @@ function App() {
           
 
         </div>
-
-        <div className='container'>
         
+        <div className='container'>
+        <div className="navbar" data-aos= "fade-right">
+            <ul>
+              <Link className = "navbar-item" to ="grid-main" smooth= {true} offset={-70} duration={500}>Home</Link>
+              <Link className = "navbar-item" to = "ab-me" smooth= {true} offset={-70} duration={500}>About</Link>
+              <Link className = "navbar-item" to = "" smooth= {true} offset={-70} duration={500}>Projects</Link>
+
+            </ul>
+          </div>
         <div className='grid-main' >
+          
+            
+         
+        
           <div className='grid-left'>
             <div className='title-cont'>
               <h1>
@@ -73,11 +77,8 @@ function App() {
             </div>
             <div className='ab-me-ph'>
           <p>  
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec blandit orci.
-            Integer malesuada odio in quam feugiat feugiat. In et mauris sagittis, facilisis justo nec, sollicitudin neque.
-              Nunc quis tellus id mi accumsan pharetra. Mauris at pretium velit. Suspendisse facilisis nisl et nisi viverra, id tempor lectus iaculis.
-              Donec lobortis nibh et lorem fermentum facilisis. Phasellus enim tellus, porta id vestibulum at, feugiat a sapien. Proin vehicula, nulla nec pretium scelerisque, quam risus dapibus dui, in pretium lacus nisi maximus lectus.
-                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent bibendum dui et metus fringilla, ac malesuada diam aliquam. Duis at ex eget nisi fermentum commodo.
+           My name is Ignacio Doria, I am a high school student in Argentina, afortunatly I am a very good tasted man and I like front-end development.
+           I started to learn this skills about 2 years ago and now I can say I know JS, React JS, CSS, HTML, Python and some PHP for some back-end needs. I am open minded when it comes to learn and I enjoy the process of learning. 
           </p>
           </div>
            
