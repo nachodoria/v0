@@ -78,7 +78,7 @@ function App() {
             <div className='ab-me-ph'>
           <p>  
            My name is Ignacio Doria, I am a high school student in Argentina, afortunatly I am a very good tasted man and I like front-end development.
-           I started to learn this skills about 2 years ago and now I can say I know JS, React JS, CSS, HTML, Python and some PHP for some back-end needs. I am open minded when it comes to learn and I enjoy the process of learning. 
+           I started to learn this skills in 2020 and now I can say I know JS, React JS, CSS, HTML, Python and some PHP for some back-end needs. I am open minded when it comes to learn and I enjoy the process of learning. 
           </p>
           </div>
            

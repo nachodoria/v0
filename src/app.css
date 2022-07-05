@@ -21,9 +21,10 @@ body{
 }
 .navbar ul{
     display: flex;
+   padding: 0;
+    justify-content: center;
     list-style: none;
     flex-direction: row;
-    margin-left: 20px;
     
    
 
@@ -49,12 +50,11 @@ body{
 /**/
 
 .container-top-button{
-    z-index: 2;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
     position: sticky;
-    top: 30px;
+    top: 40px;
     right: 10px;
     cursor: pointer;
     margin-right: 20px;
@@ -122,7 +122,7 @@ body{
     align-items: center;
     justify-content: center;
     color: var(--btn-text-color);
-    transition: 250ms;
+    transition: all 250ms;
     margin-top: 20px;
     border: 2px solid var(--button-color);
 }
@@ -171,6 +171,7 @@ body{
     
 }
 
+
 /**/
 
 
@@ -214,7 +215,7 @@ body{
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: var(--head-color);
+    background-color: var(--button-color);
     transform: scaleX(0);
     transition: transform 0.3s ease-in-out;
   }
