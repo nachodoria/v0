@@ -58,9 +58,9 @@ function App() {
             className='redirect-ab-us'
               smooth= {true}
               offset={-70}
-            duration={500}
-            >
-              About Me </Link>
+            duration={500}>
+              About Me
+               </Link>
           </div>
         
           <div className='grid-right' data-aos="fade-down">
