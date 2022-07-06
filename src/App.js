@@ -64,7 +64,7 @@ function App() {
           </div>
         
           <div className='grid-right' data-aos="fade-down">
-            <img className='img-me' alt='me' src={require ('./components/me.jpeg')}/>
+            <img className='me' alt='me' src={require ('./components/me.jpeg')}/>
           </div>
           
         </div>
@@ -101,40 +101,44 @@ function App() {
                 
                     <h5>Linkea2</h5>
                     <p>Linkea2 is an HTML-CSS-JS-PHP based virtual campus for school purposes, in the web application, professors can upload tasks and files, and students can upload their homeworks and take notes of the class in the campus</p>
-                    <Link to =""
-                  className='button-learn'
+                    <div className='button-learn'>
+                  <Link to =""
                   >
                     Learn More
                   </Link>
+                  </div>
               </div>
               <div id='ps' className='pject' data-aos = "fade-left">
                   <h5>You-Detect</h5>
                   <p>YouDetect is a desktop app based con C#, Arduino, and Micrsoft Access, it works locally and it is designed for blind people. It helps blind people to open doors and it also comes with a glasses that help blind people detect stuff from the upper body to the head </p>
+                  <div className='button-learn'>
                   <Link to =""
-                  className='button-learn'
                   >
                     Learn More
                   </Link>
+                  </div>
               </div>
               <div id='ps' className='pject' data-aos = "fade-left">
                   <h5>Link-It</h5>
                   <p>Link-It is a MERN Stack project (React JS, Node JS, Angular and Mongo DB) which helps people in enterprises to organize themselves and have a confortable space to comunicate.
                   Project is in development.</p>
+                  <div className='button-learn'>
                   <Link to =""
-                  className='button-learn'
                   >
                     Learn More
                   </Link>
+                  </div>
+                  
               </div>
               
             </div>
           </div>
         </div>  
         <div className='socials'>
-          <img className = "social-item" alt='img-social'  src= "./components/instagram.svg"/> 
-          <img className = "social-item" alt='img-social'  src="./components/github.svg"/>
-          <img className = "social-item" alt='img-social'  src="./components/mail.svg"/>
-          <img  className = "social-item" alt='img-social' src="./components/twitter.svg"/>
+          <img className = "social-item" alt='social'  src= {require("./components/instagram.svg")}/> 
+          <img className = "social-item" alt='social'  src={require("./components/github.svg")}/>
+          <img className = "social-item" alt='social'  src={require("./components/mail.svg")}/>
+          <img  className = "social-item" alt='social' src={require("./components/twitter.svg")}/>
         </div>
         </div>
  

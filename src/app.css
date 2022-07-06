@@ -300,7 +300,7 @@ body{
     border-radius: 30px;
 }
 .pject h5{
-    margin-left: 30px;
+    margin-left: 20px;
     padding-top: 30px;
     font-weight: 600;
     font-size: 25px;
@@ -317,12 +317,15 @@ margin-inline: 20px;
 }
 
 .button-learn{
-    margin-left: 34px;
+    margin-left: 15px;
     cursor: pointer;
-    width: 247px;
-    height: 47px;
+    width: 100px;
+    height: 35px;
     background-color: var(--button-color);
     border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 @media only screen and (max-width: 1150px) {
     .projects{
