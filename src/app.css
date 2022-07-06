@@ -28,13 +28,21 @@ body{
 
 }
 .navbar-item{
-    padding-inline: 30px;
-    color: var(--btn-text-color);
+
     transition: all 250ms;
     cursor: pointer;
     font-size: 1.1rem;
 }
-.navbar-item:hover{
+.navbar-item-container{
+    padding-inline: 30px;
+    width: 80px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--btn-text-color);
+}
+.navbar-item-container:hover{
     color: var(--button-color);
 }
 #main{
@@ -55,7 +63,13 @@ body{
     position: sticky;
     top: 40px;
     right: 10px;
+    z-index: 3;
 }
+@media only screen and (min-height: 200px) {
+        .container-top-button{
+            z-index: 3;
+        }
+    }
 #top-button{
     cursor: pointer;
     margin-right: 20px;
@@ -267,6 +281,7 @@ body{
     position: sticky;
     width: 50%;
     top: 300px;
+    margin-bottom: 440px;
     margin-top: 300px;
     float: left;
 }
@@ -315,6 +330,7 @@ margin-inline: 20px;
         display: grid;
         grid-template-rows: 1fr 1fr;
         flex-direction: row;
+        height: 300vh;
     }
     .projects-grid{
         display: grid;
@@ -326,9 +342,27 @@ margin-inline: 20px;
         position:unset;
         align-items: center;
         justify-content: center;
+        width: 100%;
+        margin: 0;
     }
     .all-projects{
         align-items: center;
         justify-content: center;
     }
 }
+
+
+/*********/
+
+.socials{
+    width: 100%;
+    height: 10vh;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-item{
+    margin-inline: 20px;
+}
+

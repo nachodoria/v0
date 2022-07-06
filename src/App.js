@@ -34,10 +34,9 @@ function App() {
         <div className='container'>
         <div className="navbar" data-aos= "fade-right">
             <ul>
-              <Link className = "navbar-item" to ="grid-main" smooth= {true} offset={-70} duration={500}>Home</Link>
-              <Link className = "navbar-item" to = "ab-me" smooth= {true} offset={-70} duration={500}>About</Link>
-              <Link className = "navbar-item" to = "pject" smooth= {true} offset={-70} duration={500}>Projects</Link>
-
+              <div className='navbar-item-container'><Link className = "navbar-item" to ="grid-main" smooth= {true} offset={-70} duration={800}>Home</Link></div>
+              <div className='navbar-item-container'><Link className = "navbar-item" to = "ab-me" smooth= {true} offset={-70} duration={800}>About</Link></div>
+              <div className='navbar-item-container'><Link className = "navbar-item" to = "pject" smooth= {true} offset={-70} duration={800}>Projects</Link></div>
             </ul>
           </div>
         <div className='grid-main' >
@@ -91,7 +90,7 @@ function App() {
         <div className='projects'>
           <div className='projects-grid'>
             <div className='project-title'>
-              <div className='top-projects' data-aos = "fade-right">
+              <div className='top-projects' >
               
                 <h1>Projects📚</h1>
               </div>
@@ -130,6 +129,12 @@ function App() {
               
             </div>
           </div>
+        </div>  
+        <div className='socials'>
+          <img className = "social-item" alt='img-social'  src= "./components/instagram.svg"/> 
+          <img className = "social-item" alt='img-social'  src="./components/github.svg"/>
+          <img className = "social-item" alt='img-social'  src="./components/mail.svg"/>
+          <img  className = "social-item" alt='img-social' src="./components/twitter.svg"/>
         </div>
         </div>
  
