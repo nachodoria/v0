@@ -36,7 +36,7 @@ function App() {
             <ul>
               <Link className = "navbar-item" to ="grid-main" smooth= {true} offset={-70} duration={500}>Home</Link>
               <Link className = "navbar-item" to = "ab-me" smooth= {true} offset={-70} duration={500}>About</Link>
-              <Link className = "navbar-item" to = "" smooth= {true} offset={-70} duration={500}>Projects</Link>
+              <Link className = "navbar-item" to = "pject" smooth= {true} offset={-70} duration={500}>Projects</Link>
 
             </ul>
           </div>
@@ -91,10 +91,15 @@ function App() {
         <div className='projects'>
           <div className='projects-grid'>
             <div className='project-title'>
+              <div className='top-projects' data-aos = "fade-right">
+              
                 <h1>Projects📚</h1>
+              </div>
+                
             </div>
             <div className='all-projects'>
-              <div id='ps' className='pject'>
+              <div id='ps' className='pject' data-aos = "fade-left">
+                
                     <h5>Linkea2</h5>
                     <p>Linkea2 is an HTML-CSS-JS-PHP based virtual campus for school purposes, in the web application, professors can upload tasks and files, and students can upload their homeworks and take notes of the class in the campus</p>
                     <Link to =""
@@ -103,7 +108,7 @@ function App() {
                     Learn More
                   </Link>
               </div>
-              <div id='ps' className='pject'>
+              <div id='ps' className='pject' data-aos = "fade-left">
                   <h5>You-Detect</h5>
                   <p>YouDetect is a desktop app based con C#, Arduino, and Micrsoft Access, it works locally and it is designed for blind people. It helps blind people to open doors and it also comes with a glasses that help blind people detect stuff from the upper body to the head </p>
                   <Link to =""
@@ -112,7 +117,7 @@ function App() {
                     Learn More
                   </Link>
               </div>
-              <div id='ps' className='pject'>
+              <div id='ps' className='pject' data-aos = "fade-left">
                   <h5>Link-It</h5>
                   <p>Link-It is a MERN Stack project (React JS, Node JS, Angular and Mongo DB) which helps people in enterprises to organize themselves and have a confortable space to comunicate.
                   Project is in development.</p>

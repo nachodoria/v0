@@ -246,23 +246,34 @@ body{
 
 .projects{
     width: 100%;
+    position: relative;
+    display: block;
     
 
 }
 .projects-grid{
-    grid-template-columns: 1fr 1fr;
-    display: grid;
-    height: 100vh;
+    
+    height: 250vh;
 }
-.project-title{
+.top-projects{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.project-title{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: sticky;
+    width: 50%;
+    top: 300px;
+    margin-top: 300px;
+    float: left;
+}
 .all-projects{
-    overflow-y: scroll;
-    margin-top: 107px;
-    overflow-x: hidden;
+    margin-top: 100px;
+    float: right;
+    width: 40%;
 }
 
 .pject{
@@ -292,8 +303,32 @@ margin-inline: 20px;
 
 .button-learn{
     margin-left: 34px;
-    width: 224px;
+    cursor: pointer;
+    width: 247px;
     height: 47px;
     background-color: var(--button-color);
     border-radius: 11px;
+}
+@media only screen and (max-width: 1150px) {
+    .projects{
+        flex-direction: row;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        flex-direction: row;
+    }
+    .projects-grid{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    .project-title{
+        display: flex;
+        position:unset;
+        align-items: center;
+        justify-content: center;
+    }
+    .all-projects{
+        align-items: center;
+        justify-content: center;
+    }
 }
