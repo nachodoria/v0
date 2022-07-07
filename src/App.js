@@ -64,7 +64,7 @@ function App() {
           </div>
         
           <div className='grid-right' data-aos="fade-down">
-            <img className='me' alt='me' src={require ('./components/me.jpeg')}/>
+            <img className='img-me' alt='me' src={require ('./components/me.jpeg')}/>
           </div>
           
         </div>
@@ -135,7 +135,7 @@ function App() {
           </div>
         </div>  
         <div className='socials'>
-          <img className = "social-item" alt='social'  src= {require("./components/instagram.svg")}/> 
+          <img className = "social-item" alt='social'  src= {require ('./components/instagram.svg')}/> 
           <img className = "social-item" alt='social'  src={require("./components/github.svg")}/>
           <img className = "social-item" alt='social'  src={require("./components/mail.svg")}/>
           <img  className = "social-item" alt='social' src={require("./components/twitter.svg")}/>
