@@ -47,7 +47,7 @@ function App() {
           <div className='grid-left'>
             <div className='title-cont'>
               <h1>
-        Hi ! 👋🏻<br></br> I´m Ignacio Doria 
+        Hi !<br></br> I´m Ignacio Doria 
         </h1>
             </div>
         <div  data-aos="fade-down">
@@ -77,8 +77,7 @@ function App() {
             </div>
             <div className='ab-me-ph'data-aos = "fade-right">
           <p>  
-           My name is Ignacio Doria, I am a high school student in Argentina, afortunatly I am a very good tasted man and I like front-end development.
-           I started to learn this skills in 2020 and now I can say I know JS, React JS, CSS, HTML, Python and some PHP for some back-end needs. I am open minded when it comes to learn and I enjoy the process of learning. 
+          My name is Ignacio Doria, I am a high school student in Argentina, unfortunately I am a very good tasting man and I like front-end development. I started to learn these skills in 2020 and now I can say I know JS, React JS, CSS, HTML, Python and some PHP for some back-end needs. I am open minded and I enjoy the process of learning.
           </p>
           </div>
            
@@ -102,7 +101,7 @@ function App() {
                     <h5>Linkea2</h5>
                     <p>Linkea2 is an HTML-CSS-JS-PHP based virtual campus for school purposes, in the web application, professors can upload tasks and files, and students can upload their homeworks and take notes of the class in the campus</p>
                     <div className='button-learn'>
-                  <Link to =""
+                  <Link onClick={() => window.location = 'mailto:ignaciodoriaoberman@gmail.com?subject=I want to learn more about Linkea2'}
                   >
                     Learn More
                   </Link>
@@ -110,9 +109,9 @@ function App() {
               </div>
               <div id='ps' className='pject' data-aos = "fade-left">
                   <h5>You-Detect</h5>
-                  <p>YouDetect is a desktop app based con C#, Arduino, and Micrsoft Access, it works locally and it is designed for blind people. It helps blind people to open doors and it also comes with a glasses that help blind people detect stuff from the upper body to the head </p>
+                  <p>YouDetect is a desktop app based con C#, Arduino, and Microsoft Access, it works locally and it is designed for blind people. It helps blind people to open doors and it also comes with a glasses that help blind people detect stuff from the upper body to the head </p>
                   <div className='button-learn'>
-                  <Link to =""
+                  <Link onClick={() => window.location = 'mailto:ignaciodoriaoberman@gmail.com?subject=I want to learn more about You-Detect'}
                   >
                     Learn More
                   </Link>
@@ -120,10 +119,10 @@ function App() {
               </div>
               <div id='ps' className='pject' data-aos = "fade-left">
                   <h5>Link-It</h5>
-                  <p>Link-It is a MERN Stack project (React JS, Node JS, Angular and Mongo DB) which helps people in enterprises to organize themselves and have a confortable space to comunicate.
+                  <p>Link-It is a MERN Stack project (React JS, Node JS, Angular and MongoDB) which helps people in enterprises to organize themselves and have a confortable space to comunicate.
                   Project is in development.</p>
                   <div className='button-learn'>
-                  <Link to =""
+                  <Link onClick={() => window.location = 'mailto:ignaciodoriaoberman@gmail.com?subject=I want to learn more about Link-It'}
                   >
                     Learn More
                   </Link>
@@ -135,11 +134,12 @@ function App() {
           </div>
         </div>  
         <div className='socials'>
-          <span id = "socials" className = "social-1" alt='social' /> 
-          <span id = "socials" className = "social-2" alt='social' />
-          <span id = "socials" className = "social-3" alt='social'/>
-          <span  id = "socials" className = "social-4" alt='social'/>
+        <a href='https://www.instagram.com/nacho.doria/' id = "socials" className = "social-1"> <span  alt='social' > </span> </a>
+        <a onClick={() => window.location = 'mailto:ignaciodoriaoberman@gmail.com'} id = "socials" className = "social-2"><span id = "socials" className = "social-2" alt='social' /></a>
+        <a href='https://github.com/nachodoria' id = "socials" className = "social-3"> <span id = "socials" className = "social-3" alt='social'/></a>
+        <a href='https://twitter.com/NachoDoria_' id = "socials" className = "social-4"> <span  id = "socials" className = "social-4" alt='social'/></a>
         </div>
+        <div></div>
         </div>
  
     </>

@@ -382,6 +382,7 @@ margin-inline: 20px;
 }
 .social-2{
     margin-inline: 20px;
+    cursor: pointer;
     height: 32px;
     width: 32px;
     background-image: url("./components/mail.svg");
