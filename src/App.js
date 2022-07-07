@@ -11,13 +11,16 @@ function App() {
     Aos.init({duration : 2000});
 }, [])
 
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+
 
   return (
     <>
      
         <div id='main'>
-         
-
+       
         <div className='container-top-button' data-aos="fade-down">
           
           <Link to = "container" 
@@ -134,12 +137,12 @@ function App() {
           </div>
         </div>  
         <div className='socials'>
-        <a href='https://www.instagram.com/nacho.doria/' id = "socials" className = "social-1"> <span  alt='social' > </span> </a>
-        <a onClick={() => window.location = 'mailto:ignaciodoriaoberman@gmail.com'} id = "socials" className = "social-2"><span id = "socials" className = "social-2" alt='social' /></a>
-        <a href='https://github.com/nachodoria' id = "socials" className = "social-3"> <span id = "socials" className = "social-3" alt='social'/></a>
-        <a href='https://twitter.com/NachoDoria_' id = "socials" className = "social-4"> <span  id = "socials" className = "social-4" alt='social'/></a>
+        <a rel="noreferrer" target="_blank" href='https://www.instagram.com/nacho.doria/' id = "socials" className = "social-1"> <span  alt='social' > </span> </a>
+        <a onClick={() => window.location = 'mailto:ignaciodoriaoberman@gmail.com'} id = "socials" className = "social-2"><span alt='social' /></a>
+        <a rel="noreferrer" target="_blank" href='https://github.com/nachodoria' id = "socials" className = "social-3"> <span alt='social'/></a>
+        <a rel="noreferrer" target="_blank" href='https://twitter.com/NachoDoria_' id = "socials" className = "social-4"> <span  alt='social'/></a>
         </div>
-        <div></div>
+        
         </div>
  
     </>

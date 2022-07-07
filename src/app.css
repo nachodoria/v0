@@ -53,6 +53,7 @@ body{
     scroll-behavior: smooth;
 
     z-index: 2;
+    cursor: 1px solid --btn-text-color;
 }
 
 /**/
