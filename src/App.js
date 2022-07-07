@@ -135,10 +135,10 @@ function App() {
           </div>
         </div>  
         <div className='socials'>
-          <img className = "social-item" alt='social'  src= {require ('./components/instagram.svg')}/> 
-          <img className = "social-item" alt='social'  src={require("./components/github.svg")}/>
-          <img className = "social-item" alt='social'  src={require("./components/mail.svg")}/>
-          <img  className = "social-item" alt='social' src={require("./components/twitter.svg")}/>
+          <span id = "socials" className = "social-1" alt='social' /> 
+          <span id = "socials" className = "social-2" alt='social' />
+          <span id = "socials" className = "social-3" alt='social'/>
+          <span  id = "socials" className = "social-4" alt='social'/>
         </div>
         </div>
  
