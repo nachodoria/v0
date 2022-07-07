@@ -77,7 +77,7 @@ function App() {
             </div>
             <div className='ab-me-ph'data-aos = "fade-right">
           <p>  
-          My name is Ignacio Doria, I am a high school student in Argentina, unfortunately I am a very good tasting man and I like front-end development. I started to learn these skills in 2020 and now I can say I know JS, React JS, CSS, HTML, Python and some PHP for some back-end needs. I am open minded and I enjoy the process of learning.
+          My name is Ignacio Doria, I am a high school student in Argentina, fortunately I am a very good tasting man and I like front-end development. I started to learn these skills in 2020 and now I can say I know JS, React JS, CSS, HTML, Python and some PHP for some back-end needs. I am open minded and I enjoy the process of learning.
           </p>
           </div>
            
