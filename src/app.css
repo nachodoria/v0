@@ -51,7 +51,6 @@ body{
     width: 100%;
     margin: 0px;
     scroll-behavior: smooth;
-
     z-index: 2;
     cursor: 1px solid --btn-text-color;
 }
