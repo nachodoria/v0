@@ -267,7 +267,7 @@ body{
 }
 .projects-grid{
     
-    height: 250vh;
+    height: 190vh;
 }
 .top-projects{
     display: flex;
@@ -281,7 +281,7 @@ body{
     position: sticky;
     width: 50%;
     top: 300px;
-    margin-bottom: 440px;
+    margin-bottom: 262px;
     margin-top: 300px;
     float: left;
 }
