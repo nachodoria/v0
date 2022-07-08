@@ -55,6 +55,7 @@ body{
     cursor: 1px solid --btn-text-color;
 }
 
+
 /**/
 .container-top-button{
     display: flex;
@@ -335,6 +336,32 @@ margin-inline: 20px;
     color: var(--button-color);
     
 }
+@media only screen and (max-width: 622px) {
+    .projects-grid{
+        transform: scale(0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .pject{
+        margin-left: 10px;
+    }
+    .grid-main{
+        transform: scale(0.8);
+    }
+    .title-cont{
+        font-size: 20px;
+
+    }
+    .main{
+        width: fit-content;
+    }
+    .all-projects{
+        width: 100%;
+    }
+
+}
+
 @media only screen and (max-width: 1150px) {
     .projects{
         flex-direction: row;
