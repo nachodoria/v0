@@ -36,7 +36,7 @@ useEffect(()=>{
           dimensions={50}
           fill='#ff8e3c'
           smoothness={{
-            movement: 0.5,
+            movement: 0.4,
             scale: 0.1,
             opacity: 0.5,
           }}
