@@ -14,18 +14,7 @@ function App() {
 
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
-}
-/*
-const cursorRef = useRef(null);
-
-
-useEffect(()=>{
-  document.addEventListener("mousemove", (handle) =>{
-    const {clientX, clientY} = handle;
-    cursorRef.current.style.transform =  'translate3d(${clientX}px, ${clientY}px, 0)';
-  });
-}, [])
-*/  
+} 
 
   return (
     <>
