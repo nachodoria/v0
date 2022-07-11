@@ -3,8 +3,7 @@ import "./app.css"
 import { Link } from "react-scroll";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import CustomCursor from 'custom-cursor-react';
-import 'custom-cursor-react/dist/index.css';
+
 
 function App() {
 
@@ -20,16 +19,7 @@ window.onbeforeunload = function () {
     <>
      
       <div id='main'>
-          <CustomCursor
-          customClass='custom-cursor'
-          dimensions={50}
-          fill='#ff8e3c'
-          smoothness={{
-            movement: 0.4,
-            scale: 0.1,
-            opacity: 0.5,
-          }}
-        />
+          
         <div className='container-top-button' data-aos="fade-down">
           
           <Link to = "container" 
