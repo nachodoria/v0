@@ -1,23 +1,46 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState, useRef} from 'react'
 import "./app.css"
 import { Link } from "react-scroll";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import CustomCursor from 'custom-cursor-react';
+import 'custom-cursor-react/dist/index.css';
 
 function App() {
 
-      useEffect(()=> {
-        Aos.init({duration : 2000});
-    }, [])
+  useEffect(()=> {
+    Aos.init({duration : 2000});
+}, [])
 
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
+/*
+const cursorRef = useRef(null);
+
+
+useEffect(()=>{
+  document.addEventListener("mousemove", (handle) =>{
+    const {clientX, clientY} = handle;
+    cursorRef.current.style.transform =  'translate3d(${clientX}px, ${clientY}px, 0)';
+  });
+}, [])
+*/  
 
   return (
     <>
      
       <div id='main'>
+          <CustomCursor
+          customClass='custom-cursor'
+          dimensions={50}
+          fill='#ff8e3c'
+          smoothness={{
+            movement: 0.5,
+            scale: 0.1,
+            opacity: 0.5,
+          }}
+        />
         <div className='container-top-button' data-aos="fade-down">
           
           <Link to = "container" 
@@ -101,20 +124,20 @@ window.onbeforeunload = function () {
                     <h5>Linkea2</h5>
                     <p>Linkea2 is an HTML-CSS-JS-PHP based virtual campus for school purposes, in the web application, professors can upload tasks and files, and students can upload their homeworks and take notes of the class in the campus</p>
                     <div className='button-learn'>
-                  <Link onClick={() => window.location = 'mailto:ignaciodoriaoberman@gmail.com?subject=I want to learn more about Linkea2'}
+                  <a onClick={() => window.location = 'mailto:ignaciodoriaoberman@gmail.com?subject=I want to learn more about Linkea2'}
                   >
                     Learn More
-                  </Link>
+                  </a>
                   </div>
               </div>
               <div id='ps' className='pject' data-aos = "fade-left">
                   <h5>You-Detect</h5>
                   <p>YouDetect is a desktop app based con C#, Arduino, and Microsoft Access, it works locally and it is designed for blind people. It helps blind people to open doors and it also comes with a glasses that help blind people detect stuff from the upper body to the head </p>
                   <div className='button-learn'>
-                  <Link onClick={() => window.location = 'mailto:ignaciodoriaoberman@gmail.com?subject=I want to learn more about You-Detect'}
+                  <a onClick={() => window.location = 'mailto:ignaciodoriaoberman@gmail.com?subject=I want to learn more about You-Detect'}
                   >
                     Learn More
-                  </Link>
+                  </a>
                   </div>
               </div>
               <div id='ps' className='pject' data-aos = "fade-left">
@@ -122,10 +145,10 @@ window.onbeforeunload = function () {
                   <p>Link-It is a MERN Stack project (React JS, Node JS, Angular and MongoDB) which helps people in enterprises to organize themselves and have a confortable space to comunicate.
                   Project is in development.</p>
                   <div className='button-learn'>
-                  <Link onClick={() => window.location = 'mailto:ignaciodoriaoberman@gmail.com?subject=I want to learn more about Link-It'}
+                  <a onClick={() => window.location = 'mailto:ignaciodoriaoberman@gmail.com?subject=I want to learn more about Link-It'}
                   >
                     Learn More
-                  </Link>
+                  </a>
                   </div>
                   
               </div>
