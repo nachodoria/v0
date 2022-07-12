@@ -3,6 +3,9 @@ import "./app.css"
 import { Link } from "react-scroll";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import AnimatedCursor from "react-animated-cursor"
+
+
 
 
 function App() {
@@ -19,7 +22,14 @@ window.onbeforeunload = function () {
     <>
      
       <div id='main'>
-          
+        <AnimatedCursor
+        innerSize={10}
+        outerSize={5}
+        outerAlpha={10}
+        innerScale={1.4}
+        outerScale={2}
+        color='255, 142, 60'
+        />
         <div className='container-top-button' data-aos="fade-down">
           
           <Link to = "container" 
