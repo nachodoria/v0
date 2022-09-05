@@ -100,8 +100,9 @@ body{
     transition: all 150ms;
     animation-name: appear;
     animation-duration: 3s;  
-    margin-right: 300px;  
+    margin-right: 350px;  
     color: var(--button-color);
+    margin-bottom: -50px;
 }
 .container .title-cont h2{
     font-weight: 500;
@@ -109,7 +110,7 @@ body{
     transition: all 150ms;
     animation-name: appear;
     animation-duration: 3s;  
-    margin-left: 200px;  
+    margin-left: 300px;  
 }
 @keyframes appear{
     from{transform: translateY(-200px);
@@ -166,12 +167,13 @@ body{
     
     .container h1{
         text-align: center;
+       
     }
     .container h2{
         text-align: center;
     }
 }
-@media only screen and (max-width: 628px) {
+@media only screen and (max-width: 800px) {
    
     .grid-main{
         display: flex;
@@ -179,6 +181,7 @@ body{
     .container .title-cont h1{
         margin-right: 0px;
         font-size: 40px;
+        margin-bottom: 50px;
     }
     .container .title-cont h2{
         margin-left: 0px;
