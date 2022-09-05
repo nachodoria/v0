@@ -95,40 +95,46 @@ body{
     overflow: hidden;
 }
 .container .title-cont h1{
-    font-weight: 500;
-    font-size: 60px;
+    font-weight: 400;
+    font-size: 50px;
     transition: all 150ms;
     animation-name: appear;
-    animation-duration: 3s;    
+    animation-duration: 3s;  
+    margin-right: 300px;  
+    color: var(--button-color);
+}
+.container .title-cont h2{
+    font-weight: 500;
+    font-size: 100px;
+    transition: all 150ms;
+    animation-name: appear;
+    animation-duration: 3s;  
+    margin-left: 200px;  
 }
 @keyframes appear{
-    from{transform: translateY(200px);}
-    to{transform: translateY(0px);}
+    from{transform: translateY(-200px);
+    opacity: 0;}
+    to{transform: translateY(0px);
+    opacity: 1;}
 
 }
 
 
 .grid-main{
-    display: grid;
+    display: flex;
     height: 110vh;
     width: 100%;
-    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
     margin-top: -85px;
 }
-.grid-left{
+.grid-a{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     color: var(--head-color);
-    
-}
-.grid-right{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   
 }
 
 .redirect-ab{
@@ -155,35 +161,32 @@ body{
 
 
 
-.img-me{
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    transition:  400ms;
-    border: 4px solid var(--button-color) ;
-    
-}
-.img-me:hover{
-    border: 4px solid var(--btn-text-color);
-    transform: scale(1.01);
-}
 
 @media only screen and (max-width: 871px) {
-    .img-me{
-        width: 250px;
-        height: 250px;
-    }
+    
     .container h1{
         text-align: center;
     }
-}
-@media only screen and (max-width: 556px) {
-    .img-me{
-        display: none;
+    .container h2{
+        text-align: center;
     }
+}
+@media only screen and (max-width: 628px) {
+   
     .grid-main{
         display: flex;
     }
+    .container .title-cont h1{
+        margin-right: 0px;
+        font-size: 40px;
+    }
+    .container .title-cont h2{
+        margin-left: 0px;
+        font-size: 60px;
+    }
+        
+
+
     
 }
 @media only screen and (max-width: 492px) {

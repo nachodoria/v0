@@ -52,16 +52,15 @@ window.onbeforeunload = function () {
             </ul>
           </div>
         <div className='grid-main' >
-          
-            
-         
-        
-          <div className='grid-left'>
+          <div className='grid-a'>
             <div className='title-cont'>
               <h1>
-        Hi !<br></br> I´m Ignacio Doria 
-        </h1>
-            </div>
+                Ignacio Doria 
+              </h1>
+              <h2>
+                IT Student
+              </h2>
+              </div>
         <div  data-aos="fade-down">
            <Link to = "ab-me"
            className='redirect-ab'
@@ -74,14 +73,8 @@ window.onbeforeunload = function () {
         </div>
            
           </div>
-        
-          <div className='grid-right' data-aos="fade-down">
-            <img className='img-me' alt='me' src={require ('./components/me.jpeg')}/>
-          </div>
-          
         </div>
-        
-        </div>
+      </div>
 
           <div className='ab-me' > 
           <div className='ab-me-title'data-aos = "fade-right">
