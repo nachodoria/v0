@@ -28,7 +28,7 @@ window.onbeforeunload = function () {
         outerAlpha={10}
         innerScale={1.4}
         outerScale={2}
-        color='255, 142, 60'
+        color='127, 90, 240'
         />
         <div className='container-top-button' data-aos="fade-down">
           
@@ -52,14 +52,14 @@ window.onbeforeunload = function () {
             </ul>
           </div>
         <div className='grid-main' >
-          <div className='grid-a'>
-            <div className='title-cont'>
-              <h1>
-                Ignacio Doria 
-              </h1>
-              <h2>
-                IT Student
-              </h2>
+              <div className='grid-a'>
+                <div className='title-cont'>
+                  <h1>
+                    Ignacio Doria 
+                  </h1>
+                  <h2>
+                    IT Student
+                  </h2>
               </div>
         <div  data-aos="fade-down">
            <Link to = "ab-me"
@@ -72,8 +72,8 @@ window.onbeforeunload = function () {
                </Link>
         </div>
            
+            </div>
           </div>
-        </div>
       </div>
 
           <div className='ab-me' > 

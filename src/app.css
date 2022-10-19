@@ -2,12 +2,12 @@
 
 *{
     font-family: 'League Spartan', sans-serif;
-    --back-color: #eff0f3;
-    --head-color: #0d0d0d;
-    --p-color: #2a2a2a;
-    --button-color : #ff8e3c;
-    --btn-text-color: #0d0d0d;
-    --card-color : #E8E7E7;
+    --back-color: #16161a;
+    --head-color: #fffffe;
+    --p-color: #94a1b2;
+    --button-color : #7f5af0;
+    --btn-text-color: #fffffe;
+    --card-color : #010101;
     cursor: none;
 }
 
@@ -281,6 +281,7 @@ body{
     justify-content: center;
 }
 .project-title{
+    color: var(--head-color);
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -308,6 +309,7 @@ body{
 }
 
 .pject h5{
+    color: var(--head-color);
     margin-left: 20px;
     padding-top: 30px;
     font-weight: 600;
@@ -317,6 +319,7 @@ body{
 }
 
 .pject p{
+    color: var(--p-color);
     font-style: normal;
 font-weight: 400;
 font-size: 15px;
