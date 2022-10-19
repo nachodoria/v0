@@ -36,7 +36,7 @@ window.onbeforeunload = function () {
             smooth = {true} 
             offset={-70}
             duration={800}
-              id='top-button' className="material-symbols-outlined">
+            id='top-button' className="material-symbols-outlined">
         keyboard_double_arrow_up
         </Link>
           
